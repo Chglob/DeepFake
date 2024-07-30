@@ -326,11 +326,16 @@ def open_folder(path: str):
 def create_version_html() -> str:
     python_version = ".".join([str(x) for x in sys.version_info[0:3]])
     versions_html = f"""
-python: <span title="{sys.version}">{python_version}</span>
-•
-torch: {getattr(torch, '__long_version__',torch.__version__)}
-•
-gradio: {gradio.__version__}
+<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+    <div>
+        <table width="100%" border="0" align="center"><tr><td width="20%"><img src="/file=Btubel.png" border="0" width='300' /></td><td align="center"><h1 align="center">بسيطة تيوب <br />تبديل الوجة في الصور و الفيديو<br/><br/>
+            أشترك فى قناة بسيطة تيوب للمزيد من فيديوهات التكنولوجيا و الذكاء الاصطناعى<br><a href="https://www.youtube.com/@basetatube/?sub_confirmation=1" target="_blank">أشترك الأن</a><br/>
+            </h1></td></tr></table>
+        <div style="display: flex; justify-content: center; align-items: center; text-align: center;>
+            Roop Unleashed 4.1
+        </div>
+    </div>
+</div>
 """
     return versions_html
 
