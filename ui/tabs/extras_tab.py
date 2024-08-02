@@ -30,7 +30,7 @@ def extras_tab():
     for f in frame_upscalers_map.keys():
         upscalernames.append(f)
 
-    with gr.Tab("🎉 Extras"):
+    with gr.Tab("🎉 Extras", visible=False):
         with gr.Row():
             files_to_process = gr.Files(label='File(s) to process', file_count="multiple", file_types=["image", "video"])
         with gr.Row(variant='panel'):
