@@ -63,7 +63,7 @@ def run():
                     #gr.HTML(util.create_version_html(), elem_id="versions")
                     gr.HTML(util.create_version_html())
             faceswap_tab()
-            livecam_tab()
+            #livecam_tab()
             facemgr_tab()
             extras_tab()
             #settings_tab()
