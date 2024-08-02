@@ -65,8 +65,8 @@ def run():
             faceswap_tab()
             #livecam_tab()
             facemgr_tab()
-            #extras_tab()
-            settings_tab()
+            extras_tab()
+            #settings_tab()
 
         uii.ui_restart_server = False
         try:
