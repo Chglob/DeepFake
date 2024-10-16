@@ -326,7 +326,14 @@ def open_folder(path: str):
 def create_version_html() -> str:
     python_version = ".".join([str(x) for x in sys.version_info[0:3]])
     versions_html = f"""
-
+<div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+    <div>
+        <table width="100%" border="0" align="center"><tr><td width="20%"><img src="/file=Btubel.png" border="0" width='300' /></td><td align="center"></td></tr></table>
+        <div style="display: flex; justify-content: center; align-items: center; text-align: center;>
+            Roop Unleashed 4.1
+        </div>
+    </div>
+</div>
 """
     return versions_html
 
